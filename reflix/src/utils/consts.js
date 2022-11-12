@@ -1,6 +1,6 @@
 const consts = {
   BUDGET: 100,
-  MOVIEPRICE: 20,
+  MOVIEPRICE: 25,
 };
 
 export default consts;

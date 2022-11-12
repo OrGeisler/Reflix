@@ -22,7 +22,7 @@ class Movies extends Component {
             <Container>
                 <Row>
                     <div className='headline-font'>{this.props.type}</div>
-                    {this.props.displayOnly ? <div>to rent movies please log in first </div> : null}
+                    {this.props.displayOnly ? <div>** to rent movies please log in first ** </div> : null}
                 </Row>
                 <Row>
                     {(this.props.type == "catalog" && !this.props.displayOnly) ? movies.map(movie => this.fillterBySearch(movie)) :

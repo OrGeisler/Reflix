@@ -3,7 +3,7 @@ import "../styles/Navigate.css";
 
 function Navigate() {
   return (
-    <Nav variant="tabs" defaultActiveKey="/">
+    <Nav variant= "tabs"  defaultActiveKey="/">
       <Nav.Item>
         <Nav.Link href="/">
           <div className="nav-text">Home</div>
