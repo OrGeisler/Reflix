@@ -1,6 +1,5 @@
 # Reflix
 
-# Reflix
 ## Overview
 Reflix is a movie rental app. It allows a user to browse a catalog of movies, and select some to rent, so long as the user has the budget for it. This is a very special kind of renting system wherein the money is returned to the user when the movie is returned.
 
@@ -19,7 +18,10 @@ Reflix is a movie rental app. It allows a user to browse a catalog of movies, an
 ## Screenshots
 
 ![image](https://user-images.githubusercontent.com/84503621/201485661-1d882427-56bb-42ba-af59-6406d8aaa38b.png)
+<br />
 ![image](https://user-images.githubusercontent.com/84503621/201485706-35bac68b-3eec-4cf4-a4bd-fc1416229f9b.png)
+<br />
 ![image](https://user-images.githubusercontent.com/84503621/201485876-dc5b946a-53ec-4a8e-8244-a47acadc4a09.png)
+<br />
 ![image](https://user-images.githubusercontent.com/84503621/201485893-54959e20-7917-4d61-8a4a-212253e38b96.png)
 
