@@ -16,7 +16,7 @@ class MovieCard extends Component {
   render() {
     const movie = this.props.movie
     return (
-      <Card className='movie' style={{ width: '10rem', height: '20rem' }}>
+      <Card className='movie' style={{ width: '12rem', height: '20rem' }}>
         <Link to={`/movie/${movie.id}`}>
           <Card.Img variant="top" src={movie.img} height="180rem" />
         </Link>
