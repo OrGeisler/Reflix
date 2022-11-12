@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import {Link} from 'react-router-dom'
+import { Component } from 'react';
 import '../styles/Home.css'
 import User from './User';
 import Container from 'react-bootstrap/Container';
@@ -12,13 +11,13 @@ class Home extends Component {
         const users = this.props.users
         return (
             <Container>
-            <Row></Row>
-            <Row className='row-size'>
-                <div className='home-font'>WHO'S WATCHING?</div>
-            </Row>
-            <Row>
-                {users.map(user => <Col><User user = {user} key = {user.id}/></Col> )}
-            </Row>
+                <Row></Row>
+                <Row className='row-size'>
+                    <div className='home-font'>WHO'S WATCHING?</div>
+                </Row>
+                <Row>
+                    {users.map(user => <Col><User user={user} key={user.id} /></Col>)}
+                </Row>
             </Container>
         );
     }

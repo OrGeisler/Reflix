@@ -1,5 +1,3 @@
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
 import '../styles/MovieCard.css'
 import Movies from './Movies';
 import UserNav from './UserNav';

@@ -7,10 +7,10 @@ function UserNav(props) {
 
     return (
         <Container>
-        <Row className='nav-row'>
-            <Col><input className='search' type="text" value={props.testText} onChange = {props.updateSearchText}/></Col>
-            <Col><div className='budget'>Budget : {props.user.budget}</div></Col>
-        </Row>
+            <Row className='nav-row'>
+                <Col><input className='search' type="text" value={props.testText} onChange={props.updateSearchText} /></Col>
+                <Col><div className='budget'> {props.user.name}'s Budget : {props.user.budget}</div></Col>
+            </Row>
         </Container>
     );
 }

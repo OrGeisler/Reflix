@@ -1,8 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import '../styles/User.css'
-import { BrowserRouter as Router ,Route , Link} from 'react-router-dom'
-
 
 function User(props) {
   const user = props.user

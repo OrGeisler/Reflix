@@ -1,5 +1,3 @@
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
 import '../styles/Movies.css'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -11,33 +9,34 @@ import React, { Component } from 'react';
 class Movies extends Component {
 
     fillterBySearch = (movie) => {
-       const searchText = this.props.searchText.toUpperCase()
-       if((movie.title.toUpperCase()).includes(searchText)){
-        return <Col><MovieCard movieAction = {this.props.movieAction} displayOnly = {this.props.displayOnly} movie = {movie} user = {this.props.user}/></Col>
-       }
+        const searchText = this.props.searchText.toUpperCase()
+        if ((movie.title.toUpperCase()).includes(searchText)) {
+            return <Col><MovieCard movieAction={this.props.movieAction} displayOnly={this.props.displayOnly} movie={movie} user={this.props.user} /></Col>
+        }
     }
 
 
     render() {
         const movies = this.props.movies
-        return(
-        <Container>
-        <Row>
-            <div className='headline-font'>{this.props.type}</div>
-            {this.props.displayOnly?<div>to rent movies please log in first </div>:null}
-        </Row>
-        <Row>
-            {(this.props.type == "catalog" && !this.props.displayOnly)?movies.map(movie => this.fillterBySearch(movie)):
-                                                  movies.map(movie => {
-                                                    if(movie.isRented){
-                                                        return <Col><MovieCard movieAction = {this.props.movieAction} displayOnly = {this.props.displayOnly}
-                                                        movie = {movie} user = {this.props.user} rented ={true}/></Col>
-                                                        }
-                                                    })}
-            {(this.props.displayOnly)?movies.map(movie => <Col><MovieCard movieAction = {this.props.movieAction} displayOnly = {this.props.displayOnly} movie = {movie} user = {this.props.user}/></Col>):null}
-        </Row>
-        </Container>
-    )};
+        return (
+            <Container>
+                <Row>
+                    <div className='headline-font'>{this.props.type}</div>
+                    {this.props.displayOnly ? <div>to rent movies please log in first </div> : null}
+                </Row>
+                <Row>
+                    {(this.props.type == "catalog" && !this.props.displayOnly) ? movies.map(movie => this.fillterBySearch(movie)) :
+                        movies.map(movie => {
+                            if (movie.isRented) {
+                                return <Col><MovieCard movieAction={this.props.movieAction} displayOnly={this.props.displayOnly}
+                                    movie={movie} user={this.props.user} rented={true} /></Col>
+                            }
+                        })}
+                    {(this.props.displayOnly) ? movies.map(movie => <Col><MovieCard movieAction={this.props.movieAction} displayOnly={this.props.displayOnly} movie={movie} user={this.props.user} /></Col>) : null}
+                </Row>
+            </Container>
+        )
+    };
 }
 
 export default Movies;

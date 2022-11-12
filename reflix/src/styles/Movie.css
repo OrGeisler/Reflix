@@ -1,0 +1,16 @@
+.title {
+  margin: 30px;
+  font-family: "Ultra", serif;
+  font-size: 50px;
+}
+
+.desc {
+  margin: 50px;
+  font-family: "Ultra", serif;
+  font-size: 20px;
+}
+
+.img {
+  filter: drop-shadow(10px 10px 5px #222);
+  border-radius: 20%;
+}
