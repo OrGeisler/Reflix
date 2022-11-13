@@ -11,7 +11,7 @@ class Movies extends Component {
     fillterBySearch = (movie) => {
         const searchText = this.props.searchText.toUpperCase()
         if ((movie.title.toUpperCase()).includes(searchText)) {
-            return <Col><MovieCard movieAction={this.props.movieAction} displayOnly={this.props.displayOnly} movie={movie} user={this.props.user} /></Col>
+            return <Col><MovieCard key ={movie.id} movieAction={this.props.movieAction} displayOnly={this.props.displayOnly} movie={movie} user={this.props.user} /></Col>
         }
     }
 
@@ -28,7 +28,7 @@ class Movies extends Component {
                     {(this.props.type == "catalog" && !this.props.displayOnly) ? movies.map(movie => this.fillterBySearch(movie)) :
                         movies.map(movie => {
                             if (movie.isRented) {
-                                return <Col><MovieCard movieAction={this.props.movieAction} displayOnly={this.props.displayOnly}
+                                return <Col><MovieCard key ={movie.id} movieAction={this.props.movieAction} displayOnly={this.props.displayOnly}
                                     movie={movie} user={this.props.user} rented={true} /></Col>
                             }
                         })}
